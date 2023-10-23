@@ -1,0 +1,40 @@
+* {
+    background-color: darkgray;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.blocAction {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.blocInscription, .blocConnexion {
+
+    border: 1px solid #000000;
+    border-radius: 25px;
+    background-color: #F5F5F5;
+    padding: 5px 10px 5px 10px;
+}
+
+.lienInscription, .lienConnexion {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+button {
+
+    border-style: none;
+}

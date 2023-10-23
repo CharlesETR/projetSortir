@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/accueil.css') }}" />
+{% endblock %}
+
+
+{% block title %} ACCUEIL {% endblock %}
+
+{% block body %}
+
+
+<h1 class=""> Tu es étudiant à l'ENI et tu souhaites rencontrer de nouvelle tête ? </h1>
+
+    <div class="blocAction">
+
+        <div class="blocInscription">
+        <h3> Rejoins-nous dès maintenant </h3>
+            <div class="lienInscription">
+            <a href="{{ path('app_register') }}"> Inscription </a>
+            </div>
+        </div>
+
+        <div class="blocConnexion">
+        <h3> Tu es déjà inscris ? </h3>
+            <div class="lienConnexion">
+            <a href="{{ path('app_login') }}"> Inscription </a>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

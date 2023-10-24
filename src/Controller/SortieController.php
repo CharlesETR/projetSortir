@@ -11,7 +11,7 @@ class SortieController extends AbstractController
     #[Route('/sortie', name: 'app_sortie')]
     public function index(): Response
     {
-        return $this->render('sortie/index.html.twig', [
+        return $this->render('sortie/OrgaSortie.html.twig', [
             'controller_name' => 'SortieController',
         ]);
     }

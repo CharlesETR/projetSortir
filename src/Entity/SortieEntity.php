@@ -14,8 +14,8 @@ class SortieEntity
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
-    private ?int $idSortie = null;
+  //  #[ORM\Column]
+    //private ?int $idSortie = null;
 
     #[ORM\Column(length: 255)]
     private ?string $nom = null;
@@ -37,7 +37,7 @@ class SortieEntity
         return $this->id;
     }
 
-    public function getIdSortie(): ?int
+   /* public function getIdSortie(): ?int
     {
         return $this->idSortie;
     }
@@ -47,7 +47,7 @@ class SortieEntity
         $this->idSortie = $idSortie;
 
         return $this;
-    }
+    }*/
 
     public function getNom(): ?string
     {

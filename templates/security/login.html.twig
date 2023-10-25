@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+{% endblock %}
+
 {% block title %}Connexion {% endblock %}
 
 {% block body %}
@@ -14,6 +18,7 @@
         </div>
     {% endif %}
 
+    <div class="container">
     <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
     <label for="inputEmail">Email</label>
     <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
@@ -28,5 +33,20 @@
     <button class="btn btn-lg btn-primary" type="submit">
         Me connecter
     </button>
+    </div>
 </form>
+
+    <p>Mot de passe oublié ? <a href="{{ path('app_forgot_password_request') }}"> Cliquer ici </a> </p>
+
+    <div class="drops">
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+    </div>
+    </div>
+
+
+
 {% endblock %}
